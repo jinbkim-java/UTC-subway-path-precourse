@@ -11,5 +11,7 @@ public class Application {
         final Scanner scanner = new Scanner(System.in);
         final InputView inputView = new InputView(scanner);
         final MenuController mainMenuController = new MainMenuController(inputView);
+
+        DummySetup.initialize();
     }
 }

@@ -1,5 +1,7 @@
 package subway.domain;
 
+import subway.view.ErrorMessage;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,5 +24,12 @@ public class LineRepository {
 
     public static void deleteAll() {
         lines.clear();
+    }
+
+    public static Line getLine(String name){
+        return lines.stream()
+                .filter(line -> line.getName().equals(name))
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.LINE_NONE));
     }
 }
