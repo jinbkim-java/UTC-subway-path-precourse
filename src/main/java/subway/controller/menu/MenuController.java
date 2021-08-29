@@ -22,13 +22,6 @@ public abstract class MenuController implements Controller {
     }
 
     protected void runNextContorller() {
-//        String select = inputView.userStringInput(MenuMessage.FUNCTION_SELECT);
-
-//        String decision = inputView.inputFunction();
-//        if (isExitDecision(decision)) {
-//            return;
-//        }
-//        runChildController(decision);
         System.out.println("menu controller run next");
         String select = inputView.userStringInput(MenuMessage.FUNCTION_SELECT);
         runController(select);

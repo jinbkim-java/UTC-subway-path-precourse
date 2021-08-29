@@ -11,7 +11,9 @@ public class MainMenuController extends MenuController {
     }
 
     @Override
-    protected void printMenu() { OutputView.printMainMenu(); }
+    protected void printMenu() {
+        OutputView.printMenu(MenuMessage.MAIN_MENU);
+    }
 
     @Override
     protected void runNextContorller() {

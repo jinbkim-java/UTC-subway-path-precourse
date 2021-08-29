@@ -15,6 +15,6 @@ public class OptionMenuController extends MenuController{
 
     @Override
     protected void printMenu()  {
-        OutputView.printOptionMenu();
+        OutputView.printMenu(MenuMessage.OPTION_MENU);
     }
 }
