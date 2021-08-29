@@ -1,4 +1,4 @@
-package subway.view;
+package subway.view.message;
 
 public class ErrorMessage {
     private static final String LABEL = "[ERROR] ";

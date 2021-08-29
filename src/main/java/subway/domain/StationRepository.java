@@ -1,6 +1,6 @@
 package subway.domain;
 
-import subway.view.ErrorMessage;
+import subway.view.message.ErrorMessage;
 
 import java.util.ArrayList;
 import java.util.Collections;

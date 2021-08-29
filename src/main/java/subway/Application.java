@@ -13,5 +13,8 @@ public class Application {
         final MenuController mainMenuController = new MainMenuController(inputView);
 
         DummySetup.initialize();
+//        while (true) {
+            mainMenuController.run();
+//        }
     }
 }
