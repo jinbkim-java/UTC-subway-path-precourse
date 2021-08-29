@@ -1,6 +1,6 @@
 package subway.domain;
 
-import subway.view.message.ErrorMessage;
+import subway.view.Message;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,6 +30,6 @@ public class LineRepository {
         return lines.stream()
                 .filter(line -> line.getName().equals(name))
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.LINE_NONE));
+                .orElseThrow(() -> new IllegalArgumentException(Message.ERROR_LINE_NONE));
     }
 }

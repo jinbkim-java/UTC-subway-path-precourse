@@ -2,7 +2,7 @@ package subway.controller.path;
 
 import subway.controller.Controller;
 import subway.view.InputView;
-import subway.view.message.MenuMessage;
+import subway.view.Message;
 
 public abstract class PathController implements Controller {
 
@@ -16,8 +16,8 @@ public abstract class PathController implements Controller {
     public void run() {
         System.out.println("path controller");
 
-        String startingStation = inputView.userStringInput(MenuMessage.STARTING_STATION_SELECT);
-        String endingStation = inputView.userStringInput(MenuMessage.ENDING_STATION_SELECT);
+        String startingStation = inputView.userStringInput(Message.SELECT_STARTING_STATION);
+        String endingStation = inputView.userStringInput(Message.SELECT_ENDING_STATION);
 
         calculatePath(startingStation, endingStation);
     }

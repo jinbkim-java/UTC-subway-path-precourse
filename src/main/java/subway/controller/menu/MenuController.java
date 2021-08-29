@@ -2,7 +2,7 @@ package subway.controller.menu;
 
 import subway.controller.Controller;
 import subway.view.InputView;
-import subway.view.message.MenuMessage;
+import subway.view.Message;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public abstract class MenuController implements Controller {
 
     protected void runNextContorller() {
         System.out.println("menu controller run next");
-        String select = inputView.userStringInput(MenuMessage.FUNCTION_SELECT);
+        String select = inputView.userStringInput(Message.SELECT_FUNCTION);
         runController(select);
     }
 

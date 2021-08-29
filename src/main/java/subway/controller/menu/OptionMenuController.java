@@ -4,7 +4,7 @@ import subway.controller.path.ShortestPathController;
 import subway.controller.path.ShortestTimeController;
 import subway.view.InputView;
 import subway.view.OutputView;
-import subway.view.message.MenuMessage;
+import subway.view.Message;
 
 public class OptionMenuController extends MenuController{
     public OptionMenuController(InputView inputView) {
@@ -15,6 +15,6 @@ public class OptionMenuController extends MenuController{
 
     @Override
     protected void printMenu()  {
-        OutputView.printMenu(MenuMessage.OPTION_MENU);
+        OutputView.printMenu(Message.OPTION_MENU);
     }
 }

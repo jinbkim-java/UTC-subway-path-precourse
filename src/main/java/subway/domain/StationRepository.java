@@ -1,6 +1,6 @@
 package subway.domain;
 
-import subway.view.message.ErrorMessage;
+import subway.view.Message;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,6 +30,6 @@ public class StationRepository {
         return stations.stream()
                 .filter(station -> station.getName().equals(name))
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.STATION_NONE));
+                .orElseThrow(() -> new IllegalArgumentException(Message.ERROR_STATION_NONE));
     }
 }
