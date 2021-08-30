@@ -17,4 +17,12 @@ public class OptionMenuController extends MenuController{
     protected void printMenu()  {
         OutputView.printMenu(Message.OPTION_MENU);
     }
+
+    @Override
+    protected void runNextContorller() {
+        String select = inputView.userStringInput(Message.SELECT_FUNCTION);
+        if (select.equalsIgnoreCase(Message.USER_INPUT_BACK))
+            return ;
+        runController(select);
+    }
 }

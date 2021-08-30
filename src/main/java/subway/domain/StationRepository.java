@@ -32,4 +32,9 @@ public class StationRepository {
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException(Message.ERROR_STATION_NONE));
     }
+
+    public static boolean isExistStation(String station) {
+        return stations.stream()
+                .anyMatch(stationName -> stationName.getName().equals(station));
+    }
 }

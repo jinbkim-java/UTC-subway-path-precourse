@@ -20,12 +20,18 @@ public class Message {
     public static final String ERROR_LABEL = "[ERROR] ";
     public static final String ERROR_STATION_NONE = ERROR_LABEL + "존재하지 않은 역 입니다.";
     public static final String ERROR_LINE_NONE = ERROR_LABEL + "존재하지 않은 호선 입니다.";
+    public static final String ERROR_INPUT_WRONG = ERROR_LABEL + "잘못된 입력값 입니다.";
+    public static final String ERROR_STAION_OVERLAP = ERROR_LABEL + "출발역과 도착역이 달라야 합니다.";
+
 
     public static final String INFO_RESULT = "## 조회 결과";
     public static final String INFO_LABEL = "[INFO] ";
     public static final String INFO_DIVIDER = INFO_LABEL + "---";
     public static final String INFO_TOTAL_DISTANCE = INFO_LABEL + "총 거리: %dkm\n";
     public static final String INFO_TOTAL_TIME = INFO_LABEL + "총 시간: %d분\n";
+
+    public static final String USER_INPUT_QUIT = "Q";
+    public static final String USER_INPUT_BACK = "B";
 
     public static final List<String> MAIN_MENU = Arrays.asList(
             MAIN_LABEL,
