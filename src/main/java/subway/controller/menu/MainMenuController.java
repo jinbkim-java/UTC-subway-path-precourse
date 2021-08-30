@@ -8,7 +8,7 @@ public class MainMenuController extends MenuController {
 
     public static boolean isRunning = true;
 
-    public MainMenuController(InputView inputView){
+    public MainMenuController(InputView inputView) {
         super(inputView);
         controllerList.add(new OptionMenuController(inputView));
     }
@@ -23,7 +23,7 @@ public class MainMenuController extends MenuController {
         String select = inputView.userStringInput(Message.SELECT_FUNCTION);
         if (select.equalsIgnoreCase(Message.USER_INPUT_QUIT)) {
             isRunning = false;
-            return ;
+            return;
         }
         runController(select);
     }

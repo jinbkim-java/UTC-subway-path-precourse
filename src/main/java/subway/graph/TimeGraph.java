@@ -32,7 +32,7 @@ public class TimeGraph {
     public static int totalTime(List<String> pathInformation) {
         int totalTime = 0;
         for (int currentStation = 1; currentStation < pathInformation.size(); currentStation++) {
-            final DefaultWeightedEdge eachEdge = timeGraph.getEdge(pathInformation.get(currentStation-1), pathInformation.get(currentStation));
+            final DefaultWeightedEdge eachEdge = timeGraph.getEdge(pathInformation.get(currentStation - 1), pathInformation.get(currentStation));
             final int edgeWeight = (int) timeGraph.getEdgeWeight(eachEdge);
             totalTime += edgeWeight;
         }

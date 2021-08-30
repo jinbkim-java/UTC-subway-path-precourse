@@ -7,7 +7,7 @@ import subway.view.OutputView;
 
 import java.util.List;
 
-public class ShortestTimeController extends PathController{
+public class ShortestTimeController extends PathController {
     public ShortestTimeController(InputView inputView) {
         super(inputView);
     }

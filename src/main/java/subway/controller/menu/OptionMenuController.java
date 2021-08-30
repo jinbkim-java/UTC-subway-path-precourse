@@ -6,7 +6,7 @@ import subway.view.InputView;
 import subway.view.OutputView;
 import subway.view.Message;
 
-public class OptionMenuController extends MenuController{
+public class OptionMenuController extends MenuController {
     public OptionMenuController(InputView inputView) {
         super(inputView);
         controllerList.add(new ShortestPathController(inputView));
@@ -14,7 +14,7 @@ public class OptionMenuController extends MenuController{
     }
 
     @Override
-    protected void printMenu()  {
+    protected void printMenu() {
         OutputView.printMenu(Message.OPTION_MENU);
     }
 
@@ -22,7 +22,7 @@ public class OptionMenuController extends MenuController{
     protected void runNextContorller() {
         String select = inputView.userStringInput(Message.SELECT_FUNCTION);
         if (select.equalsIgnoreCase(Message.USER_INPUT_BACK))
-            return ;
+            return;
         runController(select);
     }
 }

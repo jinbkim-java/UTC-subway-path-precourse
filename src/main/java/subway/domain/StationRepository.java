@@ -26,7 +26,7 @@ public class StationRepository {
         stations.clear();
     }
 
-    public static Station getStation(String name){
+    public static Station getStation(String name) {
         return stations.stream()
                 .filter(station -> station.getName().equals(name))
                 .findFirst()

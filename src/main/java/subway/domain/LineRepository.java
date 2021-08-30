@@ -26,7 +26,7 @@ public class LineRepository {
         lines.clear();
     }
 
-    public static Line getLine(String name){
+    public static Line getLine(String name) {
         return lines.stream()
                 .filter(line -> line.getName().equals(name))
                 .findFirst()

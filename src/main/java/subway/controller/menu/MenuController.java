@@ -3,7 +3,6 @@ package subway.controller.menu;
 import subway.controller.Controller;
 import subway.utils.Validate;
 import subway.view.InputView;
-import subway.view.Message;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +19,7 @@ public abstract class MenuController implements Controller {
         try {
             printMenu();
             runNextContorller();
-        }
-        catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException e) {
             System.out.println();
             System.out.println(e.getMessage());
             run();
@@ -39,5 +37,6 @@ public abstract class MenuController implements Controller {
     }
 
     protected abstract void printMenu();
+
     protected abstract void runNextContorller();
 }

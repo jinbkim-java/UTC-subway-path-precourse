@@ -4,7 +4,6 @@ import subway.controller.Controller;
 import subway.utils.Validate;
 import subway.view.InputView;
 import subway.view.Message;
-import subway.view.OutputView;
 
 public abstract class PathController implements Controller {
     public final InputView inputView;
@@ -20,8 +19,7 @@ public abstract class PathController implements Controller {
             String endingStation = inputView.userStringInput(Message.SELECT_ENDING_STATION);
             validate(startingStation, endingStation);
             calculatePath(startingStation, endingStation);
-        }
-        catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException e) {
             System.out.println();
             System.out.println(e.getMessage());
         }
