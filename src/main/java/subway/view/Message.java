@@ -17,7 +17,7 @@ public class Message {
     public static final String OPTION_SHORTEST_TIME = "2. 최소 시간";
     public static final String OPTION_QUIT = "B. 돌아가기";
 
-    private static final String ERROR_LABEL = "[ERROR] ";
+    public static final String ERROR_LABEL = "[ERROR] ";
     public static final String ERROR_STATION_NONE = ERROR_LABEL + "존재하지 않은 역 입니다.";
     public static final String ERROR_LINE_NONE = ERROR_LABEL + "존재하지 않은 호선 입니다.";
 

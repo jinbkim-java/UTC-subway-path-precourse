@@ -12,6 +12,7 @@ public class ShortestTimeController extends PathController{
         super(inputView);
     }
 
+    @Override
     protected void calculatePath(String startingStation, String endingStation) {
         DijkstraShortestPath shortestTime = TimeGraph.getShortestPath();
         List<String> pathInformation = shortestTime.getPath(startingStation, endingStation).getVertexList();

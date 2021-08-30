@@ -12,6 +12,7 @@ public class ShortestPathController extends PathController {
         super(inputView);
     }
 
+    @Override
     protected void calculatePath(String startingStation, String endingStation) {
         DijkstraShortestPath shortestPath = DistanceGraph.getShortestPath();
         List<String> pathInformation = shortestPath.getPath(startingStation, endingStation).getVertexList();

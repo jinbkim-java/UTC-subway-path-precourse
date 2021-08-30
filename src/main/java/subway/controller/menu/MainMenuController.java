@@ -17,7 +17,6 @@ public class MainMenuController extends MenuController {
 
     @Override
     protected void runNextContorller() {
-        System.out.println("main menu controller run next");
         String select = inputView.userStringInput(Message.SELECT_FUNCTION);
         runController(select);
     }

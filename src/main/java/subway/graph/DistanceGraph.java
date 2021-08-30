@@ -35,7 +35,6 @@ public class DistanceGraph {
             final DefaultWeightedEdge eachEdge = distanceGraph.getEdge(pathInformation.get(currentStation-1), pathInformation.get(currentStation));
             final int edgeWeight = (int)distanceGraph.getEdgeWeight(eachEdge);
             totalDistance += edgeWeight;
-            System.out.println("edgeWeight : " + edgeWeight);
         }
         return totalDistance;
     }

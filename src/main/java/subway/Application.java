@@ -2,19 +2,19 @@ package subway;
 
 import java.util.Scanner;
 
+import subway.controller.Controller;
 import subway.controller.menu.MainMenuController;
-import subway.controller.menu.MenuController;
 import subway.view.InputView;
 
 public class Application {
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
         final InputView inputView = new InputView(scanner);
-        final MenuController mainMenuController = new MainMenuController(inputView);
+        final Controller mainMenuController = new MainMenuController(inputView);
 
         DummySetup.initialize();
-//        while (true) {
+        while (true) {
             mainMenuController.run();
-//        }
+        }
     }
 }

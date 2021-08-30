@@ -16,13 +16,11 @@ public abstract class MenuController implements Controller {
     }
 
     public void run() {
-        System.out.println("menu controller run");
         printMenu();
         runNextContorller();
     }
 
     protected void runNextContorller() {
-        System.out.println("menu controller run next");
         String select = inputView.userStringInput(Message.SELECT_FUNCTION);
         runController(select);
     }
